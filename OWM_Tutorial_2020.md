@@ -551,21 +551,23 @@ v\_{0Pi}](https://latex.codecogs.com/png.latex?%5Cgamma_%7B0Fi%7D%20%3D%20%5Cpi_
 
 Noting that our random effect matrices also expand,   
 ![\\mathbf{R} =
-\\left\[\\begin{array}
-& \\sigma^2\_{eFdi} & \\sigma\_{eFdiePdi} \\\\
+\\begin{bmatrix}
+\\sigma^2\_{eFdi} & \\sigma\_{eFdiePdi} \\\\
 \\sigma\_{eFdiePdi} & \\sigma^2\_{ePdi} 
-\\end{array}\\right\]](https://latex.codecogs.com/png.latex?%5Cmathbf%7BR%7D%20%3D%0A%5Cleft%5B%5Cbegin%7Barray%7D%0A%26%20%5Csigma%5E2_%7BeFdi%7D%20%26%20%5Csigma_%7BeFdiePdi%7D%20%5C%5C%0A%5Csigma_%7BeFdiePdi%7D%20%26%20%5Csigma%5E2_%7BePdi%7D%20%0A%5Cend%7Barray%7D%5Cright%5D
+\\end{bmatrix}](https://latex.codecogs.com/png.latex?%5Cmathbf%7BR%7D%20%3D%0A%5Cbegin%7Bbmatrix%7D%0A%5Csigma%5E2_%7BeFdi%7D%20%26%20%5Csigma_%7BeFdiePdi%7D%20%5C%5C%0A%5Csigma_%7BeFdiePdi%7D%20%26%20%5Csigma%5E2_%7BePdi%7D%20%0A%5Cend%7Bbmatrix%7D
 "\\mathbf{R} =
-\\left[\\begin{array}
-& \\sigma^2_{eFdi} & \\sigma_{eFdiePdi} \\\\
+\\begin{bmatrix}
+\\sigma^2_{eFdi} & \\sigma_{eFdiePdi} \\\\
 \\sigma_{eFdiePdi} & \\sigma^2_{ePdi} 
-\\end{array}\\right]")  
+\\end{bmatrix}")  
 
 where
 ![\\sigma\_{eFdiePdi}](https://latex.codecogs.com/png.latex?%5Csigma_%7BeFdiePdi%7D
 "\\sigma_{eFdiePdi}") is the residual covariance between focal person
 and partner communion.  
-and   
+and
+
+  
 ![\\left\[\\begin{array}
 {rrrr}
 \\sigma^{2}\_{v0Fi} & \\sigma\_{v0Fiv0Pi} \\\\
@@ -843,15 +845,15 @@ And Level 2 of the multilevel model:
 
   
 ![\\beta\_{0Fdi} = \\gamma\_{00Fi} + \\gamma\_{01Fi}Partner2\_{di} + ...
-+ \\gamma\_{08Fi}Partner9\_{di} + u\_{0Fdi} \\\\ 
++ \\gamma\_{08Fi}Partner9\_{di} + u\_{0Fdi} \\\\ \\ldots \\\\
 \\beta\_{0Pdi} = \\gamma\_{00Pi} + \\gamma\_{01Pi}Partner2\_{di} + ... +
 \\gamma\_{08Pi}Partner9\_{di} + u\_{0Pdi} \\\\
 \\beta\_{1Fdi} = \\gamma\_{10Fi} + \\gamma\_{11Fi}Partner2\_{di} + ... +
 \\gamma\_{18Fi}Partner9\_{di} + u\_{1Fdi} \\\\ 
 \\beta\_{1Pdi} = \\gamma\_{10Pi} + \\gamma\_{11Pi}Partner2\_{di} + ... +
 \\gamma\_{18Pi}Partner9\_{di} +
-u\_{1Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Fdi%7D%20%3D%20%5Cgamma_%7B00Fi%7D%20%2B%20%5Cgamma_%7B01Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Fdi%7D%20%5C%5C%20%0A%5Cbeta_%7B0Pdi%7D%20%3D%20%5Cgamma_%7B00Pi%7D%20%2B%20%5Cgamma_%7B01Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Pdi%7D%20%5C%5C%0A%5Cbeta_%7B1Fdi%7D%20%3D%20%5Cgamma_%7B10Fi%7D%20%2B%20%5Cgamma_%7B11Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Fdi%7D%20%5C%5C%20%0A%5Cbeta_%7B1Pdi%7D%20%3D%20%5Cgamma_%7B10Pi%7D%20%2B%20%5Cgamma_%7B11Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Pdi%7D
-"\\beta_{0Fdi} = \\gamma_{00Fi} + \\gamma_{01Fi}Partner2_{di} + ... + \\gamma_{08Fi}Partner9_{di} + u_{0Fdi} \\\\ 
+u\_{1Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Fdi%7D%20%3D%20%5Cgamma_%7B00Fi%7D%20%2B%20%5Cgamma_%7B01Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Fdi%7D%20%5C%5C%20%5Cldots%20%5C%5C%0A%5Cbeta_%7B0Pdi%7D%20%3D%20%5Cgamma_%7B00Pi%7D%20%2B%20%5Cgamma_%7B01Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Pdi%7D%20%5C%5C%0A%5Cbeta_%7B1Fdi%7D%20%3D%20%5Cgamma_%7B10Fi%7D%20%2B%20%5Cgamma_%7B11Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Fdi%7D%20%5C%5C%20%0A%5Cbeta_%7B1Pdi%7D%20%3D%20%5Cgamma_%7B10Pi%7D%20%2B%20%5Cgamma_%7B11Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Pdi%7D
+"\\beta_{0Fdi} = \\gamma_{00Fi} + \\gamma_{01Fi}Partner2_{di} + ... + \\gamma_{08Fi}Partner9_{di} + u_{0Fdi} \\\\ \\ldots \\\\
 \\beta_{0Pdi} = \\gamma_{00Pi} + \\gamma_{01Pi}Partner2_{di} + ... + \\gamma_{08Pi}Partner9_{di} + u_{0Pdi} \\\\
 \\beta_{1Fdi} = \\gamma_{10Fi} + \\gamma_{11Fi}Partner2_{di} + ... + \\gamma_{18Fi}Partner9_{di} + u_{1Fdi} \\\\ 
 \\beta_{1Pdi} = \\gamma_{10Pi} + \\gamma_{11Pi}Partner2_{di} + ... + \\gamma_{18Pi}Partner9_{di} + u_{1Pdi}")  
@@ -863,40 +865,40 @@ Finally, Level 3 of the multilevel model:
 v\_{00Fi} \\\\ 
 \\gamma\_{01Fi} = \\pi\_{010F} + \\pi\_{011F}FocalExtraversion\_{i} \\\\
 
-... \\\\
+\\ldots \\\\
 \\gamma\_{08Fi} = \\pi\_{080F} + \\pi\_{081F}FocalExtraversion\_{i} \\\\
 
 \\gamma\_{00Pi} = \\pi\_{000P} + \\pi\_{001P}FocalExtraversion\_{i} +
 v\_{00Pi} \\\\
 \\gamma\_{01Pi} = \\pi\_{010P} + \\pi\_{011P}FocalExtraversion\_{i} \\\\
-... \\\\
+\\ldots \\\\
 \\gamma\_{10Fi} = \\pi\_{100F} + \\pi\_{101F}FocalExtraversion\_{i} +
 v\_{10Fi} \\\\ 
 \\gamma\_{11Fi} = \\pi\_{110F} + \\pi\_{111F}FocalExtraversion\_{i} \\\\
 
-... \\\\
+\\ldots \\\\
 \\gamma\_{18Fi} = \\pi\_{180F} + \\pi\_{181F}FocalExtraversion\_{i} \\\\
 
 \\gamma\_{10Pi} = \\pi\_{100P} + \\pi\_{101P}FocalExtraversion\_{i} +
 v\_{10Pi} \\\\
 \\gamma\_{11Pi} = \\pi\_{110P} + \\pi\_{111P}FocalExtraversion\_{i} \\\\
-... \\\\
+\\ldots \\\\
 \\gamma\_{18Pi} = \\pi\_{180P} +
-\\pi\_{181P}FocalExtraversion\_{i}](https://latex.codecogs.com/png.latex?%5Cgamma_%7B00Fi%7D%20%3D%20%5Cpi_%7B000F%7D%20%2B%20%5Cpi_%7B001F%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B00Fi%7D%20%5C%5C%20%0A%5Cgamma_%7B01Fi%7D%20%3D%20%5Cpi_%7B010F%7D%20%2B%20%5Cpi_%7B011F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A...%20%5C%5C%0A%5Cgamma_%7B08Fi%7D%20%3D%20%5Cpi_%7B080F%7D%20%2B%20%5Cpi_%7B081F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cgamma_%7B00Pi%7D%20%3D%20%5Cpi_%7B000P%7D%20%2B%20%5Cpi_%7B001P%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B00Pi%7D%20%5C%5C%0A%5Cgamma_%7B01Pi%7D%20%3D%20%5Cpi_%7B010P%7D%20%2B%20%5Cpi_%7B011P%7DFocalExtraversion_%7Bi%7D%20%5C%5C%0A...%20%5C%5C%0A%5Cgamma_%7B10Fi%7D%20%3D%20%5Cpi_%7B100F%7D%20%2B%20%5Cpi_%7B101F%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B10Fi%7D%20%5C%5C%20%0A%5Cgamma_%7B11Fi%7D%20%3D%20%5Cpi_%7B110F%7D%20%2B%20%5Cpi_%7B111F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A...%20%5C%5C%0A%5Cgamma_%7B18Fi%7D%20%3D%20%5Cpi_%7B180F%7D%20%2B%20%5Cpi_%7B181F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cgamma_%7B10Pi%7D%20%3D%20%5Cpi_%7B100P%7D%20%2B%20%5Cpi_%7B101P%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B10Pi%7D%20%5C%5C%0A%5Cgamma_%7B11Pi%7D%20%3D%20%5Cpi_%7B110P%7D%20%2B%20%5Cpi_%7B111P%7DFocalExtraversion_%7Bi%7D%20%5C%5C%0A...%20%5C%5C%0A%5Cgamma_%7B18Pi%7D%20%3D%20%5Cpi_%7B180P%7D%20%2B%20%5Cpi_%7B181P%7DFocalExtraversion_%7Bi%7D
+\\pi\_{181P}FocalExtraversion\_{i}](https://latex.codecogs.com/png.latex?%5Cgamma_%7B00Fi%7D%20%3D%20%5Cpi_%7B000F%7D%20%2B%20%5Cpi_%7B001F%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B00Fi%7D%20%5C%5C%20%0A%5Cgamma_%7B01Fi%7D%20%3D%20%5Cpi_%7B010F%7D%20%2B%20%5Cpi_%7B011F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cldots%20%5C%5C%0A%5Cgamma_%7B08Fi%7D%20%3D%20%5Cpi_%7B080F%7D%20%2B%20%5Cpi_%7B081F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cgamma_%7B00Pi%7D%20%3D%20%5Cpi_%7B000P%7D%20%2B%20%5Cpi_%7B001P%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B00Pi%7D%20%5C%5C%0A%5Cgamma_%7B01Pi%7D%20%3D%20%5Cpi_%7B010P%7D%20%2B%20%5Cpi_%7B011P%7DFocalExtraversion_%7Bi%7D%20%5C%5C%0A%5Cldots%20%5C%5C%0A%5Cgamma_%7B10Fi%7D%20%3D%20%5Cpi_%7B100F%7D%20%2B%20%5Cpi_%7B101F%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B10Fi%7D%20%5C%5C%20%0A%5Cgamma_%7B11Fi%7D%20%3D%20%5Cpi_%7B110F%7D%20%2B%20%5Cpi_%7B111F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cldots%20%5C%5C%0A%5Cgamma_%7B18Fi%7D%20%3D%20%5Cpi_%7B180F%7D%20%2B%20%5Cpi_%7B181F%7DFocalExtraversion_%7Bi%7D%20%5C%5C%20%0A%5Cgamma_%7B10Pi%7D%20%3D%20%5Cpi_%7B100P%7D%20%2B%20%5Cpi_%7B101P%7DFocalExtraversion_%7Bi%7D%20%2B%20v_%7B10Pi%7D%20%5C%5C%0A%5Cgamma_%7B11Pi%7D%20%3D%20%5Cpi_%7B110P%7D%20%2B%20%5Cpi_%7B111P%7DFocalExtraversion_%7Bi%7D%20%5C%5C%0A%5Cldots%20%5C%5C%0A%5Cgamma_%7B18Pi%7D%20%3D%20%5Cpi_%7B180P%7D%20%2B%20%5Cpi_%7B181P%7DFocalExtraversion_%7Bi%7D
 "\\gamma_{00Fi} = \\pi_{000F} + \\pi_{001F}FocalExtraversion_{i} + v_{00Fi} \\\\ 
 \\gamma_{01Fi} = \\pi_{010F} + \\pi_{011F}FocalExtraversion_{i} \\\\ 
-... \\\\
+\\ldots \\\\
 \\gamma_{08Fi} = \\pi_{080F} + \\pi_{081F}FocalExtraversion_{i} \\\\ 
 \\gamma_{00Pi} = \\pi_{000P} + \\pi_{001P}FocalExtraversion_{i} + v_{00Pi} \\\\
 \\gamma_{01Pi} = \\pi_{010P} + \\pi_{011P}FocalExtraversion_{i} \\\\
-... \\\\
+\\ldots \\\\
 \\gamma_{10Fi} = \\pi_{100F} + \\pi_{101F}FocalExtraversion_{i} + v_{10Fi} \\\\ 
 \\gamma_{11Fi} = \\pi_{110F} + \\pi_{111F}FocalExtraversion_{i} \\\\ 
-... \\\\
+\\ldots \\\\
 \\gamma_{18Fi} = \\pi_{180F} + \\pi_{181F}FocalExtraversion_{i} \\\\ 
 \\gamma_{10Pi} = \\pi_{100P} + \\pi_{101P}FocalExtraversion_{i} + v_{10Pi} \\\\
 \\gamma_{11Pi} = \\pi_{110P} + \\pi_{111P}FocalExtraversion_{i} \\\\
-... \\\\
+\\ldots \\\\
 \\gamma_{18Pi} = \\pi_{180P} + \\pi_{181P}FocalExtraversion_{i}")  
 
 Finally, the covariance structure of the three-level OWM model follows
