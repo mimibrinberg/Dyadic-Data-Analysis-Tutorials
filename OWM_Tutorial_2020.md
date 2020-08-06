@@ -844,27 +844,27 @@ e_{Ftdi} +e_{Ptdi}")
 And Level 2 of the multilevel model:
 
   
-![\\beta\_{0Fdi} = \\gamma\_{00Fi} + \\gamma\_{01Fi}Partner2\_{di} + ...
-+ \\gamma\_{08Fi}Partner9\_{di} +
-u\_{0Fdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Fdi%7D%20%3D%20%5Cgamma_%7B00Fi%7D%20%2B%20%5Cgamma_%7B01Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Fdi%7D
-"\\beta_{0Fdi} = \\gamma_{00Fi} + \\gamma_{01Fi}Partner2_{di} + ... + \\gamma_{08Fi}Partner9_{di} + u_{0Fdi}")  
+![\\beta\_{0Fdi} = \\gamma\_{00Fi} + \\gamma\_{01Fi}Partner2\_{di} +
+\\ldots + \\gamma\_{08Fi}Partner9\_{di} +
+u\_{0Fdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Fdi%7D%20%3D%20%5Cgamma_%7B00Fi%7D%20%2B%20%5Cgamma_%7B01Fi%7DPartner2_%7Bdi%7D%20%2B%20%5Cldots%20%2B%20%5Cgamma_%7B08Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Fdi%7D
+"\\beta_{0Fdi} = \\gamma_{00Fi} + \\gamma_{01Fi}Partner2_{di} + \\ldots + \\gamma_{08Fi}Partner9_{di} + u_{0Fdi}")  
   
 ![\\ldots](https://latex.codecogs.com/png.latex?%5Cldots "\\ldots")  
   
-![\\beta\_{0Pdi} = \\gamma\_{00Pi} + \\gamma\_{01Pi}Partner2\_{di} + ...
-+ \\gamma\_{08Pi}Partner9\_{di} +
-u\_{0Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Pdi%7D%20%3D%20%5Cgamma_%7B00Pi%7D%20%2B%20%5Cgamma_%7B01Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B08Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Pdi%7D
-"\\beta_{0Pdi} = \\gamma_{00Pi} + \\gamma_{01Pi}Partner2_{di} + ... + \\gamma_{08Pi}Partner9_{di} + u_{0Pdi}")  
+![\\beta\_{0Pdi} = \\gamma\_{00Pi} + \\gamma\_{01Pi}Partner2\_{di} +
+\\ldots + \\gamma\_{08Pi}Partner9\_{di} +
+u\_{0Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B0Pdi%7D%20%3D%20%5Cgamma_%7B00Pi%7D%20%2B%20%5Cgamma_%7B01Pi%7DPartner2_%7Bdi%7D%20%2B%20%5Cldots%20%2B%20%5Cgamma_%7B08Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B0Pdi%7D
+"\\beta_{0Pdi} = \\gamma_{00Pi} + \\gamma_{01Pi}Partner2_{di} + \\ldots + \\gamma_{08Pi}Partner9_{di} + u_{0Pdi}")  
   
-![\\beta\_{1Fdi} = \\gamma\_{10Fi} + \\gamma\_{11Fi}Partner2\_{di} + ...
-+ \\gamma\_{18Fi}Partner9\_{di} +
-u\_{1Fdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B1Fdi%7D%20%3D%20%5Cgamma_%7B10Fi%7D%20%2B%20%5Cgamma_%7B11Fi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Fdi%7D
-"\\beta_{1Fdi} = \\gamma_{10Fi} + \\gamma_{11Fi}Partner2_{di} + ... + \\gamma_{18Fi}Partner9_{di} + u_{1Fdi}")  
+![\\beta\_{1Fdi} = \\gamma\_{10Fi} + \\gamma\_{11Fi}Partner2\_{di} +
+\\ldots + \\gamma\_{18Fi}Partner9\_{di} +
+u\_{1Fdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B1Fdi%7D%20%3D%20%5Cgamma_%7B10Fi%7D%20%2B%20%5Cgamma_%7B11Fi%7DPartner2_%7Bdi%7D%20%2B%20%5Cldots%20%2B%20%5Cgamma_%7B18Fi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Fdi%7D
+"\\beta_{1Fdi} = \\gamma_{10Fi} + \\gamma_{11Fi}Partner2_{di} + \\ldots + \\gamma_{18Fi}Partner9_{di} + u_{1Fdi}")  
   
-![\\beta\_{1Pdi} = \\gamma\_{10Pi} + \\gamma\_{11Pi}Partner2\_{di} + ...
-+ \\gamma\_{18Pi}Partner9\_{di} +
-u\_{1Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B1Pdi%7D%20%3D%20%5Cgamma_%7B10Pi%7D%20%2B%20%5Cgamma_%7B11Pi%7DPartner2_%7Bdi%7D%20%2B%20...%20%2B%20%5Cgamma_%7B18Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Pdi%7D
-"\\beta_{1Pdi} = \\gamma_{10Pi} + \\gamma_{11Pi}Partner2_{di} + ... + \\gamma_{18Pi}Partner9_{di} + u_{1Pdi}")  
+![\\beta\_{1Pdi} = \\gamma\_{10Pi} + \\gamma\_{11Pi}Partner2\_{di} +
+\\ldots + \\gamma\_{18Pi}Partner9\_{di} +
+u\_{1Pdi}](https://latex.codecogs.com/png.latex?%5Cbeta_%7B1Pdi%7D%20%3D%20%5Cgamma_%7B10Pi%7D%20%2B%20%5Cgamma_%7B11Pi%7DPartner2_%7Bdi%7D%20%2B%20%5Cldots%20%2B%20%5Cgamma_%7B18Pi%7DPartner9_%7Bdi%7D%20%2B%20u_%7B1Pdi%7D
+"\\beta_{1Pdi} = \\gamma_{10Pi} + \\gamma_{11Pi}Partner2_{di} + \\ldots + \\gamma_{18Pi}Partner9_{di} + u_{1Pdi}")  
 
 Finally, Level 3 of the multilevel model:
 
